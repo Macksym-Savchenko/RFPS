@@ -142,5 +142,61 @@
         <p><strong>Email:</strong> info@service-center.ua</p>
         <p>&copy; 2024 Сервісний центр "Професійний сервіс". Всі права захищені.</p>
     </footer>
+
+    <script>
+        function createBackgroundIcons() {
+            const header = document.querySelector('body#index-page header');
+            if (!header) return;
+
+            const icons = ['🧵', '✂️', '🚗', '🔧', '💻', '🖨️'];
+            const headerHeight = header.offsetHeight;
+            const headerWidth = header.offsetWidth;
+            
+            function showIcon(iconText) {
+                const icon = document.createElement('span');
+                icon.className = 'background-icon';
+                icon.textContent = iconText;
+                
+                const iconSize = parseFloat(getComputedStyle(document.querySelector('body#index-page header h1')).fontSize) * 2.5;
+                icon.style.fontSize = iconSize + 'px';
+                
+                const maxX = headerWidth - iconSize;
+                const maxY = headerHeight - iconSize;
+                
+                icon.style.left = Math.random() * maxX + 'px';
+                icon.style.top = Math.random() * maxY + 'px';
+                
+                header.appendChild(icon);
+                
+                setTimeout(() => {
+                    icon.classList.add('visible');
+                }, 10);
+                
+                setTimeout(() => {
+                    icon.classList.remove('visible');
+                    setTimeout(() => {
+                        if (icon.parentNode) {
+                            icon.parentNode.removeChild(icon);
+                        }
+                    }, 1000);
+                }, 2000 + Math.random() * 2000);
+            }
+            
+            function showTwoIcons() {
+                const shuffledIcons = [...icons].sort(() => Math.random() - 0.5);
+                showIcon(shuffledIcons[0]);
+                showIcon(shuffledIcons[1]);
+            }
+            
+            setInterval(showTwoIcons, 1500);
+            showTwoIcons();
+        }
+        
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', createBackgroundIcons);
+        } else {
+            createBackgroundIcons();
+        }
+    </script>
 </body>
 </html>
