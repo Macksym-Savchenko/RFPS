@@ -241,7 +241,7 @@ body#catalog-page main {
 }
 
 .catalog-item:hover img {
-    filter: grayscale(50%);
+    filter: grayscale(100%);
 }
 
 @keyframes float-card {
