@@ -13,7 +13,14 @@
 
     <nav>
         <a href="index.html">Головна</a>
-        <a href="catalog.html">Каталог сервісів</a>
+        <a href="catalog.html" class="dropdown-toggle">Каталог сервісів</a>
+        <div class="dropdown-menu">
+            <a href="#sewing">Пошиття одягу на замовлення</a>
+            <a href="#repair-clothes">Ремонт та переробка одягу</a>
+            <a href="#repair-auto">Ремонт автомобілів</a>
+            <a href="#repair-printers">Ремонт принтерів та сканерів</a>
+            <a href="#repair-computers">Ремонт комп'ютерів та ноутбуків</a>
+        </div>
         <a href="feedback.html">Зворотній зв'язок</a>
     </nav>
 
@@ -21,7 +28,17 @@
         <h2 class="catalog-title">Каталог сервісів</h2>
         <section class="catalog-grid">
             <article class="catalog-item">
-                <img src="пошитя одягу.jpg" alt="Пошиття одягу" width="300" height="200">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="пошитя одягу.jpg" alt="Пошиття одягу" width="300" height="200">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Умови та уточнення</h4>
+                            <p>Прання виробу з даної тканини здійснюється за окремою угодою. Рекомендується хімчистка для натуральних тканин. Перед пошиттям обов'язкова консультація з майстром.</p>
+                        </div>
+                    </div>
+                </div>
                 <h3>Пошиття одягу на замовлення</h3>
                 <ul>
                     <li>Індивідуальний підхід до кожного клієнта</li>
@@ -34,7 +51,17 @@
             </article>
 
             <article class="catalog-item">
-                <img src="ремонт одягу.png" alt="Ремонт одягу" width="300" height="200">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="ремонт одягу.png" alt="Ремонт одягу" width="300" height="200">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Умови та уточнення</h4>
+                            <p>Ремонт виконується тільки для одягу з придатних для ремонту тканин. Складні пошкодження потребують додаткової оцінки. Гарантія на ремонт - 30 днів.</p>
+                        </div>
+                    </div>
+                </div>
                 <h3>Ремонт та переробка одягу</h3>
                 <ul>
                     <li>Ушивання дірок та пошкоджень</li>
@@ -46,7 +73,17 @@
             </article>
 
             <article class="catalog-item">
-                <img src="ремонт автомобіля.png" alt="Ремонт автомобілів" width="300" height="200">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="ремонт автомобіля.png" alt="Ремонт автомобілів" width="300" height="200">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Умови та уточнення</h4>
+                            <p>Діагностика оплачується окремо. Гарантія на роботи - 6 місяців або 10000 км пробігу. Запчастини оплачуються окремо. Можлива оренда автомобіля під час ремонту.</p>
+                        </div>
+                    </div>
+                </div>
                 <h3>Ремонт автомобілів</h3>
                 <ul>
                     <li>Діагностика технічного стану</li>
@@ -58,7 +95,17 @@
             </article>
 
             <article class="catalog-item">
-                <img src="ремонт принтерів та сканерів.png" alt="Ремонт принтерів" width="300" height="200">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="ремонт принтерів та сканерів.png" alt="Ремонт принтерів" width="300" height="200">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Умови та уточнення</h4>
+                            <p>Діагностика безкоштовна при виконанні ремонту. Гарантія на роботи - 3 місяці. Заправка картриджів виконується на місці. Старі моделі можуть потребувати додаткового часу.</p>
+                        </div>
+                    </div>
+                </div>
                 <h3>Ремонт принтерів та сканерів</h3>
                 <ul>
                     <li>Діагностика та усунення несправностей</li>
@@ -70,7 +117,17 @@
             </article>
 
             <article class="catalog-item">
-                <img src="ремонт комп'ютерів та ноутбуків.png" alt="Ремонт комп'ютерів" width="300" height="200">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="ремонт комп'ютерів та ноутбуків.png" alt="Ремонт комп'ютерів" width="300" height="200">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Умови та уточнення</h4>
+                            <p>Відновлення даних оплачується окремо. Гарантія на заміну комплектуючих - 12 місяців. Встановлення програмного забезпечення - за окремою угодою. Можливий виїзд майстра.</p>
+                        </div>
+                    </div>
+                </div>
                 <h3>Ремонт комп'ютерів та ноутбуків</h3>
                 <ul>
                     <li>Діагностика апаратного забезпечення</li>
@@ -83,5 +140,32 @@
 
         </section>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownToggle = document.querySelector('body#catalog-page nav .dropdown-toggle');
+            const dropdownMenu = document.querySelector('body#catalog-page nav .dropdown-menu');
+            
+            if (dropdownToggle && dropdownMenu) {
+                dropdownToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    dropdownMenu.classList.toggle('show');
+                });
+                
+                document.addEventListener('click', function(e) {
+                    if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                });
+            }
+            
+            const flipCards = document.querySelectorAll('.flip-card-inner');
+            flipCards.forEach(function(card) {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('flipped');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
