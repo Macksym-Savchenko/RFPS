@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Зворотній зв'язок - Сервісний центр</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="feedback-page">
     <header>
         <img src="logo.png" alt="Логотип сервісного центру" width="120">
         <h1>Сервісний центр "Професійний сервіс"</h1>
         <h2>Зворотній зв'язок</h2>
     </header>
 
-    <a href="index.html">← Повернутися на головну сторінку</a>
+    <a href="index.html" class="back-link">← Повернутися на головну сторінку</a>
 
     <main>
         <form action="#" method="post">
             <fieldset>
                 <legend>Персональна інформація</legend>
                 
-                <label for="surname">Прізвище *</label>
-                <input type="text" id="surname" name="surname" required>
-                <br><br>
+                <div class="flex-row">
+                    <label for="surname">Прізвище *</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
 
-                <label for="name">Ім'я *</label>
-                <input type="text" id="name" name="name" required>
-                <br><br>
+                <div class="flex-row">
+                    <label for="name">Ім'я *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-                <label for="email">E-mail *</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
+                <div class="flex-row">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                <label for="age">Вік *</label>
-                <input type="number" id="age" name="age" min="1" max="120" required>
-                <br><br>
+                <div class="flex-row">
+                    <label for="age">Вік *</label>
+                    <input type="number" id="age" name="age" min="1" max="120" required>
+                </div>
             </fieldset>
 
+            <div class="flex-row">
             <label for="purpose">Мета зворотнього зв'язку *</label>
             <select id="purpose" name="purpose" required>
                 <option value="">-- Оберіть мету --</option>
@@ -43,15 +49,17 @@
                 <option value="suggestion">Пропозиція</option>
                 <option value="error">Наявність помилки</option>
             </select>
-            <br><br>
+            </div>
 
-            <label for="details">Детально *</label>
-            <textarea id="details" name="details" rows="5" cols="50" maxlength="500" required></textarea>
-            <br><br>
+            <div class="flex-row">
+                <label for="details">Детально *</label>
+                <textarea id="details" name="details" rows="5" cols="50" maxlength="500" required></textarea>
+            </div>
 
-            <input type="checkbox" id="consent" name="consent" required>
-            <label for="consent">Я даю згоду на обробку персональних даних *</label>
-            <br><br>
+            <div class="flex-row">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Я даю згоду на обробку персональних даних *</label>
+            </div>
 
             <button type="submit">Відправити</button>
         </form>
